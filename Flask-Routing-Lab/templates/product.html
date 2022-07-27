@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <meta charset="UTF-8">
     <title>Product</title>
 </head>
 <body>
+	<div id= "bar">
+		<button onclick=window.location.href="{{url_for('home')}}">HOME</button>
+		<button onclick=window.location.href="{{url_for('cart')}}">CART</button>
+	</div>
+	<center>
+		<h1>{{categorie}}</h1>
 
+		<div class="for_sale" >
+			{%for i in categorie_info%}
+				<div class = "item">
+					<img src="{{categorie_info[i][1]}}">
+					<h2>{{i}}</h2>
+					<h3>{{categorie_info[i][0]}}K$</h3>
+					<button class="add_to_cart">
+						Add to Cart
+					</button>
+				</div>
+			{%endfor%}
+		</div>
+	</center>
 </body>
 </html>

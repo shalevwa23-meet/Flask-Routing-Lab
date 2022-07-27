@@ -1,10 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
+	<div id= "bar">
+		<button onclick=window.location.href="{{url_for('home')}}">HOME</button>
+		<button onclick=window.location.href="{{url_for('cart')}}">CART</button>
+	</div>
+	<center>
+		<h1>RULE.</h1>
+		<h2>You quick way to achieving GLOBAL CONTROL.</h2>
+		<h3>We are the cheapest providers of territories!</h3>
 
+			<div id="territories">
+				<button onclick=window.location.href="{{url_for('products', categorie = 'cities')}}">
+					<img src="https://www.centreforcities.org/wp-content/uploads/2021/10/CityCollage-tile.png"; width="200px;">
+					<br>
+					CITIES
+				</button>
+				<button onclick=window.location.href="{{url_for('products', categorie = 'countries')}}">
+					<img src="https://pbs.twimg.com/media/CCNxWJdUAAEo7Pq.png"; width="200px;">
+					<br>
+					COUNTRIES
+				</button>
+				<button onclick=window.location.href="{{url_for('products', categorie = 'continents')}}">
+					<img src="https://i.pinimg.com/originals/bc/4e/6c/bc4e6cf96e1872661030b137a90a7b82.png"; width="200px;">
+					<br>
+					CONTINETS
+				</button>
+				<button onclick=window.location.href="{{url_for('products', categorie = 'planets')}}">
+					<img src="https://skyandtelescope.org/wp-content/uploads/Solar-system-NASA_S.jpg"; width="200px;">
+					<br>
+					PLANETS
+				</button>
+				<button onclick=window.location.href="{{url_for('products', categorie = 'stars')}}">
+					<img src="https://i.natgeofe.com/n/2a12edda-3f79-45d1-b9bc-7ccc1499e5cf/1230_16x9.jpg?w=1200"; width="200px;">
+					<br>
+					STARS
+				</button>
+
+			</div>
+
+			<br>
+			<h1>Buy territories on sale and rule the world!</h1>
+			<h1>BUT...</h1>
+			<h1>You can't conquer the world without our special offer...</h1>
+			<div id="people">
+				<button style="height: 250px; overflow: hidden;">
+					PUTIN
+					<br>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Vladimir_Putin_as_a_child.jpg"; width="200px;">
+					
+				</button>
+
+				<button style="height: 250px; overflow: hidden;">
+					PUTIN
+					<br>
+					<img src="https://pbs.twimg.com/media/Csb15mnWIAATU2e.jpg"; width="200px;">
+					
+				</button>
+
+				<button style="height: 250px; overflow: hidden;">
+					PUTIN
+					<br>
+					<img src="https://gdb.rferl.org/7B939C05-4839-4070-9728-45D67DB36A16_w1071_s_d3.jpg"; width="200px;">
+					
+				</button>
+					
+				<button style="height: 250px; overflow: hidden;">
+					PUTIN
+					<br>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Vladimir_Putin_17-11-2021_%28cropped%29.jpg"; width="200px;">
+
+				</button>
+
+				<button style="height: 250px; overflow: hidden;">
+					PUTIN
+					<br>
+					<img src="https://static01.nyt.com/images/2014/06/16/world/17iht-letter17/17iht-letter17-superJumbo.jpg"; width="200px;">
+					
+				</button>
+
+			</div>
+		<h2>PLEASE BUY PUTIN!!! HUMANITY NEEDS YOU TO TAKE HIM AWAY AS FAR AS POSSIBLE</h2>
+
+		<h3>Speacial deal! Buy Putin, get Alpha Centauri for free*</h3>
+
+		<h6>*Deal is in condition of commitment to throw Putin into Alpha Centauri. No travel expenses included.</h6>
+
+
+	</center>
 </body>
 </html>

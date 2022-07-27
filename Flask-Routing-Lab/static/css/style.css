@@ -1,0 +1,38 @@
+#territories > button
+{
+	background-color: rgba(200,200,50,0.8);
+	border-radius: 20px;
+}
+
+
+#territories > button > img
+{
+	border-radius: 20px;
+	height: 100px;
+}
+
+#people > button
+{
+	background-color: rgba(200,200,50,0.8);
+	border-radius: 20px;
+}
+
+
+#people > button > img
+{
+	border-radius: 20px;
+	/*height: 100px;*/
+}
+
+body{
+	background-color:rgba(255,160,100,0.5)
+}
+.item{
+	display: inline-block;
+	background-color: rgba(200,200,50,0.8)
+}
+.item > img
+{
+	width: 300px;
+	height: 200px;
+}
